@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 
 // form routes
 app.use(formRoutes);
-
-app.listen(3000, () => {
-    console.log('server runnig at port 3000');
+const port = process.env.PORT;
+app.listen(port, () => {
+    console.log('server runnig at port',port);
 })
