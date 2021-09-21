@@ -1,0 +1,26 @@
+{
+  "name": "assignment-form",
+  "version": "1.0.0",
+  "description": "This is a Blog Application with CRUD and Authentication Functionalities.",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.13.9",
+    "multer": "^1.4.3",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "form"
+  ],
+  "author": "khushi",
+  "license": "ISC"
+}

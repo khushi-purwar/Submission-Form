@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  
+    <title>Form</title>
+  </head>
+  <body>
+    
+
+    <div class="container  border p-5 mt-3 shadow mb-5  bg-body rounded w-50" >
+      <div class="row">
+        <div class="col">
+          <h2 class="pb-5 text-center" style="color: #008080;">Assignment Submission Form</h2>
+          <form action="/form" method="POST" enctype="multipart/form-data" >
+
+            <div class="mb-3" >
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter your email id" required>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3" >
+              <label for="fullname" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="fullname" name="fullname"  placeholder="Enter your full name"  required>
+              
+            </div>
+
+            <div class="mb-3" >
+              <label for="phonenumber" class="form-label">Contact Number</label>
+              <input type="number" class="form-control" id="phonenumber" name="contactNumber" placeholder="Enter your contact number"  required>
+              
+            </div>
+
+            <div class="mb-3" >
+              <label for="select" class="form-label">Select Your Degree</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="degree" value="B.Tech" id="flexRadioDefault1" >
+                <label class="form-check-label" for="flexRadioDefault1">
+                  B.Tech
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="degree" value="BCA" id="flexRadioDefault2"  >
+                <label class="form-check-label" for="flexRadioDefault2">
+                  BCA
+                </label>
+              </div>
+              <div class="form-check" >
+                <input class="form-check-input" type="radio" name="degree" value="M.Tech" id="flexRadioDefault3" >
+                <label class="form-check-label" for="flexRadioDefault3">
+                  M.Tech
+                </label>
+              </div>
+            </div>
+
+            <div class="mb-3" >
+              <label for="exampleInputEmail1" class="form-label">Select Your Course</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="course" value="Computer Science (CSE)" id="c1"  >
+                <label class="form-check-label" for="c1">
+                  Computer Science (CSE)
+                </label>
+              </div>
+              <div class="form-check" >
+                <input class="form-check-input" type="radio" name="course" value="Electrical (EE)" id="c2" >
+                <label class="form-check-label" for="c2">
+                  Electrical (EE)
+                </label>
+              </div>
+              <div class="form-check" >
+                <input class="form-check-input" type="radio" name="course" value="Mechanical (ME)"  id="c3">
+                <label class="form-check-label" for="c3">
+                 Mechanical (ME)
+                </label>
+              </div>
+              <div class="form-check" >
+                <input class="form-check-input" type="radio" name="course" value="Civil (CE)" id="c4" >
+                <label class="form-check-label" for="c4">
+                  Civil (CE)
+                </label>
+              </div>
+            </div>
+      
+            
+
+            <div class="mb-3" >
+              <label for="exampleInputEmail1" class="form-label">Choose The Track</label>
+                  
+            <select class="form-select" aria-label="Default select example" name="track">
+              <option  selected>Select one option</option>
+              <option  value="Web Development">Web Development</option>
+              <option  value="Android Development">Android Development</option>
+              <option  value="UI/UX Designing">UI/UX Designing</option>
+              <option  value="Python">Python </option>
+              <option  value="Machine Learning">Machine Learning</option>
+            </select>
+            </div>
+
+            <div class="mb-3" >
+              <label for="formFile" class="form-label">Pdf File</label>
+              <input class="form-control" type="file" id="formFile" name="file" accept=".pdf" value="" required>
+            </div>
+           
+            <button type="submit" class="btn btn-primary" value="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+   
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+  </body>
+</html>
